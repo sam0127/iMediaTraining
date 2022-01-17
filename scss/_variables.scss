@@ -1,0 +1,12 @@
+$font-main: Metropolis, Helvetica, sans-serif;
+$margin-main: 0 15% 0 15%;
+@mixin font($size: 16px, $weight: 400) {
+	font-family: $font-main;
+	font-size: $size;
+	font-weight: $weight;
+	color: #000;
+}
+
+@mixin bottom-borderline($color: #e1e1dd, $weight: 1px) {
+	border-bottom: $weight solid $color;
+}
