@@ -1,0 +1,78 @@
+@use 'variables';
+
+.body-container {
+	margin: variables.$margin-main;
+	margin-top: 50px;
+}
+
+.info-section {
+	height: 200px;
+	margin-bottom: 40px;
+}
+
+.package-details {
+	padding: 0;
+}
+.rounded-purple-btn {
+	border: none;
+	background-color: #604497;
+	color: #fff;
+	border-radius: 50px;
+	padding: 10px 25px 10px 25px;
+	font-weight: 800;
+	letter-spacing: 1.5px;
+	margin: auto;
+}
+
+.package-info-container {
+	.left-arrow-icon {
+		//background: url('./assets/left-arrow.png');
+		width: 23px;
+		height: 11px;
+		//color: #000;
+		//display: block;
+	}
+
+	.return-btn-container {
+		p {
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: 1px;
+		}
+		img {
+			margin-right: 10px;
+			vertical-align: baseline;
+		}
+	}
+
+	.subscription-title-container {
+		h1 {
+			font-size: 50px;
+		}
+	}
+
+	.subscription-description-container {
+		p {
+			font-size: 18px;
+		}
+	}
+}
+
+.renew-subscription-container {
+	background-color: #fff;
+	width: 370px;
+	padding: 30px;
+	padding-left: 40px;
+
+	h3 {
+		font-size: 26px;
+		font-weight: 600;
+	}
+}
+
+.package-details-summary-container {
+	background-color: #fff;
+	height: 285px;
+	padding: 30px;
+	padding-left: 40px;
+}

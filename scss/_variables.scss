@@ -1,5 +1,5 @@
 $font-main: Metropolis, Helvetica, sans-serif;
-$margin-main: 0 15% 0 15%;
+$margin-main: 0 195px 0 350px;
 @mixin font($size: 16px, $weight: 400) {
 	font-family: $font-main;
 	font-size: $size;
@@ -9,4 +9,10 @@ $margin-main: 0 15% 0 15%;
 
 @mixin bottom-borderline($color: #e1e1dd, $weight: 1px) {
 	border-bottom: $weight solid $color;
+}
+
+@mixin horizontal-line($color: #e1e1ed, $height: 1px, $width: 100%) {
+	height: $height;
+	color: $color;
+	width: $width;
 }

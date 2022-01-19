@@ -64,10 +64,14 @@
 	max-height: 1000px;
 	
 	.logo {
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 
 	.nav-item {
-		padding: 20px;
+		padding: 30px;
+	}
+
+	hr {
+		@include variables.horizontal-line(#e1e1e1, 1px, 120px);
 	}
 }

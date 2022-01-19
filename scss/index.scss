@@ -1,5 +1,6 @@
 @use 'variables';
 @use 'header';
+@use 'body';
 
 body {
 	background-color: #f8f8f3;
@@ -7,4 +8,8 @@ body {
 .main-body {
 	@include variables.font();
 	padding: 0;
+}
+
+hr {
+	@include variables.horizontal-line();
 }
