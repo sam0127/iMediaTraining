@@ -75,4 +75,53 @@
 	height: 285px;
 	padding: 30px;
 	padding-left: 40px;
+
+	.vertical-line-container {
+		width: 20px;
+		.vertical-line {
+			@include variables.horizontal-line(#d8d8d0, 1px, 191px);
+			transform: translateY(100px) translateX(-85px) rotateZ(90deg);
+		}
+	}
+	.detail-info {
+		width: 33%;
+		h2 {
+			font-weight: 600;
+			font-size: 38px;
+		}
+
+		.price-text {
+			font-size: 20px;
+		}
+
+		button {
+			font-size: 18px;
+		}
+	}
+
+	.info-list {
+		width: 33%;
+		padding: 15px 15px 0 15px;
+		li {
+			margin-bottom: 7px;
+		}
+	}
+}
+
+.package-details-dropdown-rail {
+	height: 53px;
+	background-color: #ecece4;
+	width: 100%;
+	padding: 15px 0 15px 40px;
+
+	.rail-text-container {
+		//margin-top: auto;
+		//margin-bottom: auto;
+		//margin-left: 40px;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 600;
+		letter-spacing: 1px;
+	}
 }
