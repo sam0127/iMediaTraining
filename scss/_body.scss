@@ -72,7 +72,7 @@
 
 .package-details-summary-container {
 	background-color: #fff;
-	height: 285px;
+	height: auto; //JS will change this
 	padding: 30px;
 	padding-left: 40px;
 
@@ -108,6 +108,53 @@
 	}
 }
 
+.package-details-dropdown-container {
+	background-color: #fff;
+	padding-top: 40px;
+
+	.topline {
+		width: 424px;
+	}
+
+	.topline-text {
+		font-size: 27px;
+		font-weight: 400;
+		text-align: center;
+		padding: 0 15px 0 15px;
+	}
+
+}
+
+.show-gallery-container {
+	padding-top: 40px;
+}
+
+.show-card {
+	width: 400px;
+
+	img {
+		margin-bottom: 30px;
+	}
+	h4 {
+		font-size: 26px;
+		font-weight: 600;
+	}
+
+	.card-links {
+		margin-top: 30px;
+		p {
+			font-size: 18px;
+			font-weight: 600;
+			letter-spacing: 1.5px;
+
+		}
+
+		.right-arrow-icon {
+			margin-bottom: 0;
+			margin-right: 5px;
+		}
+	}
+}
 .package-details-dropdown-rail {
 	height: 53px;
 	background-color: #ecece4;
