@@ -1,5 +1,5 @@
 $font-main: Metropolis, Helvetica, sans-serif;
-$margin-main: 0 10% 0 calc(10% + 157px);
+$margin-main: 0 8% 0 calc(8% + 157px);
 @mixin font($size: 16px, $weight: 400) {
 	font-family: $font-main;
 	font-size: $size;

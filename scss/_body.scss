@@ -73,9 +73,8 @@
 .package-details-summary-container {
 	background-color: #fff;
 	height: auto; //JS will change this
-	padding: 30px;
-	padding-left: 40px;
-
+	padding: 30px 40px 30px 40px;
+	
 	.vertical-line-container {
 		width: 20px;
 		.vertical-line {
@@ -127,11 +126,18 @@
 
 .show-gallery-container {
 	padding-top: 40px;
+	margin-left: -20px;
+	margin-right: -20px;
 }
 
+.show-card-container {
+	//margin-left: -20px;
+	//margin-right: -20px;
+}
 .show-card {
-	width: 400px;
-
+	width: 440px;
+	padding: 20px;
+	margin: auto;
 	img {
 		margin-bottom: 30px;
 	}
@@ -152,6 +158,27 @@
 		.right-arrow-icon {
 			margin-bottom: 0;
 			margin-right: 5px;
+		}
+
+		.bottom-links {
+			img {
+				display: inline-block;
+				margin-bottom: 0;
+			}
+
+			hr {
+				@include variables.horizontal-line(#c6c6c2, 1px, 32px);
+				transform: rotateZ(90deg) translateX(-3px);
+				display: inline-block;
+				margin: 0;
+			}
+
+			p {
+				font-size: 16px;
+				font-weight: 600;
+				color: #604497;
+				display: inline-block;
+			}
 		}
 	}
 }
