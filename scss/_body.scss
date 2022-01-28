@@ -1,5 +1,22 @@
 @use 'variables';
 
+.open {
+	height: auto !important;
+}
+
+.opening {
+	transition: height 0.6s ease-in-out;
+	-webkit-transition: height 0.6s ease-in-out;
+	-moz-transition: height 0.6s ease-in-out;
+	-ms-transition: height 0.6s ease-in-out;
+	-o-transition: height 0.6s ease-in-out;
+	height: auto !important;
+}
+
+.closing {
+	transition: height 0.6s ease-in-out;
+}
+
 .body-container {
 	margin: variables.$margin-main;
 	margin-top: 50px;
@@ -72,9 +89,10 @@
 
 .package-details-summary-container {
 	background-color: #fff;
-	height: auto; //JS will change this
+	height: 300px; //JS will change this
 	padding: 30px 40px 30px 40px;
-	
+	overflow: hidden;
+
 	.vertical-line-container {
 		width: 20px;
 		.vertical-line {
@@ -111,6 +129,9 @@
 	background-color: #fff;
 	padding-top: 40px;
 
+	.dropdown-topline {
+		visibility: hidden;
+	}
 	.topline {
 		width: 424px;
 	}
