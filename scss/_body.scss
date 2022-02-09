@@ -1,20 +1,17 @@
 @use 'variables';
 
 .open {
-	height: auto !important;
+	@include variables.vendor-prefixes('transition', 'max-height 0.6s ease-in-out');
+	max-height: 4500px !important;
 }
 
-.opening {
+.close {
 	transition: height 0.6s ease-in-out;
-	-webkit-transition: height 0.6s ease-in-out;
-	-moz-transition: height 0.6s ease-in-out;
-	-ms-transition: height 0.6s ease-in-out;
-	-o-transition: height 0.6s ease-in-out;
-	height: auto !important;
-}
-
-.closing {
-	transition: height 0.6s ease-in-out;
+	@include variables.vendor-prefixes('transition', 'max-height 0.6s ease-in-out');
+	max-height: 270px;
+	@include variables.breakpoint('small-desktop') {
+		max-height: 440px;
+	}
 }
 
 .body-container {
@@ -23,7 +20,7 @@
 }
 
 .info-section {
-	height: 200px;
+	height: auto;
 	margin-bottom: 40px;
 }
 
@@ -42,6 +39,10 @@
 }
 
 .package-info-container {
+	.package-info-wrapper {
+		padding:20px;
+		min-width: 400px;
+	}
 	.left-arrow-icon {
 		//background: url('./assets/left-arrow.png');
 		width: 23px;
@@ -65,6 +66,13 @@
 	.subscription-title-container {
 		h1 {
 			font-size: 50px;
+
+			@include variables.breakpoint('small-desktop') {
+				font-size: 40px;
+			}
+			@include variables.breakpoint('tablet') {
+				font-size: 32px;
+			}
 		}
 	}
 
@@ -76,10 +84,13 @@
 }
 
 .renew-subscription-container {
+
 	background-color: #fff;
 	width: 370px;
+	min-width: 370px;
 	padding: 30px;
 	padding-left: 40px;
+	height: 200px;
 
 	h3 {
 		font-size: 26px;
@@ -89,19 +100,42 @@
 
 .package-details-summary-container {
 	background-color: #fff;
-	height: 300px; //JS will change this
-	padding: 30px 40px 30px 40px;
+	max-height: 270px;
+	height: auto; //JS will change this
+	padding: 30px 0px 30px 0px;
 	overflow: hidden;
+
+	@include variables.breakpoint('small-desktop') {
+		max-height: 440px;
+	}
 
 	.vertical-line-container {
 		width: 20px;
 		.vertical-line {
-			@include variables.horizontal-line(#d8d8d0, 1px, 191px);
-			transform: translateY(100px) translateX(-85px) rotateZ(90deg);
+			@include variables.horizontal-line(#b8b8b0, 1px, 191px);
+			transform: translateY(80px) translateX(-95px) rotateZ(90deg);
+		}
+
+		@include variables.breakpoint('small-desktop') {
+			display: none;
 		}
 	}
+
+	.info-container {
+		width: 350px;
+		margin: auto;
+		margin-left: 40px;
+		@include variables.breakpoint('small-desktop') {
+			margin: auto;
+		}
+		
+	}
 	.detail-info {
-		width: 33%;
+		//width: 33%;
+
+		@include variables.breakpoint('small-desktop') {
+			width: 100%;
+		}
 		h2 {
 			font-weight: 600;
 			font-size: 38px;
@@ -117,17 +151,33 @@
 	}
 
 	.info-list {
-		width: 33%;
-		padding: 15px 15px 0 15px;
+		//width: 33%;
+		//padding: 15px 15px 0 15px;
 		li {
-			margin-bottom: 7px;
+			margin-bottom: 2px;
+		}
+	}
+	.list-container {
+		width: 400px;
+		position: relative;
+		left: 26px;
+		bottom: 36px;
+
+		@include variables.breakpoint('desktop') {
+			width: 300px;
+		}
+		@include variables.breakpoint('small-desktop') {
+			width: 300px;
+			margin: auto;
+			position: static;
+			margin-top: 30px;
 		}
 	}
 }
 
 .package-details-dropdown-container {
 	background-color: #fff;
-	padding-top: 40px;
+	padding: 40px 30px 0 30px;
 
 	.dropdown-topline {
 		visibility: hidden;
