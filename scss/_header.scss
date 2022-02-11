@@ -1,15 +1,39 @@
 @use 'variables';
 
+.nav-open {
+	@include variables.vendor-prefixes('transition', 'left 0.3s ease-in-out');
+	left: 0 !important;
+}
+
+.nav-close {
+	@include variables.vendor-prefixes('transition', 'left 0.3s ease-in-out');
+	left: -100px !important;
+}
+
 .header {
 	height: 180px;
 	padding: 0;
 	background-image: linear-gradient(to right, #ef8d1d, #f6de50);
+
+	@include variables.breakpoint('mobile') {
+		height: 190px;
+	}
 	.header-text {
 		@include variables.font(85px,300);
 		margin: variables.$margin-main;
 		color: #fefefe;
 		position: relative;
 		top: 70px;
+
+		@include variables.breakpoint('tablet') {
+			font-size: 56px;
+			top: 80px;
+		}
+		@include variables.breakpoint('mobile') {
+			font-size: 40px;
+			margin: 0 10% 0 10%;
+			top: 90px;
+		}
 	}
 }
 
@@ -35,6 +59,9 @@
 		.final {
 			color: #000000;
 		}
+		@include variables.breakpoint('mobile') {
+			margin: 20px 10% 0 10%;
+		}
 	}
 }
 
@@ -46,18 +73,62 @@
 	border-radius: 0;
 	text-align: center;
 	padding-top: 10px;
+
+	
 	.alert-text {
 		color: #f4da4c;
 		margin: variables.$margin-main;
+
+	}
+
+	@include variables.breakpoint('mobile') {
+		font-size: 14px;
+		height: auto;
+	
+		.alert-text {
+			margin: 0 10% 0 10%;
+		}
 	}
 }
 
+.navbar-mobile {
+	display: none;
+	position: relative;
+	padding: 20px;
+	background-color: #f8f8f3;
+	border-radius: 0 0 5px 0;
+	top: 0;
+	left: 99px;
+	width: 65px;
+
+	&.open {
+		span {
+			@include variables.vendor-prefixes('transform','rotateZ(-135deg)');
+		}
+	}
+	span {
+		display: block;
+		height: 20px;
+		width: 20px;
+		border-top: 4px solid #404040;
+		border-right: 4px solid #404040;
+		@include variables.vendor-prefixes('transform','rotateZ(45deg)');
+	}
+	@include variables.breakpoint('mobile') {
+		display: block;
+	}
+}
 .navbar-container {
 	position: fixed;
 	top: 0;
 	width: 157px;
 	height: 100%;
 	background-color: #ffffff;
+
+	@include variables.breakpoint('mobile') {
+		width: 100px;
+		left: -100px;
+	}
 }
 .navbar {	
 	min-height: 900px;
@@ -65,10 +136,22 @@
 	
 	.logo {
 		margin-top: 10px;
+		@include variables.breakpoint('mobile') {
+			img {
+				width: 80px;
+			}
+
+		}
 	}
 
 	.nav-item {
 		padding: 30px;
+
+		@include variables.breakpoint('mobile') {
+			position: relative;
+			left: -10px;
+			padding: 10px;
+		}
 	}
 
 	hr {

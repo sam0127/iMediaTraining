@@ -6,26 +6,28 @@ $desktop: 1500px;
 $small-desktop: 1200px;
 $tablet: 800px;
 
-@mixin breakpoint($name) {
-	@if ($name == 'large-desktop') {
-		@media (min-width: #{$large-desktop}) {
-			@content;
-		}
-	} @else if ($name == 'desktop') {
-		@media (min-width: #{$desktop}) and (max-width: #{$large-desktop}) {
-			@content;
-		}
-	} @else if ($name == 'small-desktop') {
-		@media (min-width: #{$small-desktop}) and (max-width: #{$desktop}) {
-			@content;
-		}
-	} @else if ($name == 'tablet') {
-		@media (min-width: #{$tablet}) and (max-width: #{$small-desktop}) {
-			@content;
-		}
-	} @else if ($name == 'mobile') {
-		@media (max-width: #{$tablet}) {
-			@content;
+@mixin breakpoint($names...) {
+	@each $name in $names {
+		@if ($name == 'large-desktop') {
+			@media (min-width: #{$large-desktop}) {
+				@content;
+			}
+		} @else if ($name == 'desktop') {
+			@media (min-width: #{$desktop}) and (max-width: #{$large-desktop}) {
+				@content;
+			}
+		} @else if ($name == 'small-desktop') {
+			@media (min-width: #{$small-desktop}) and (max-width: #{$desktop}) {
+				@content;
+			}
+		} @else if ($name == 'tablet') {
+			@media (min-width: #{$tablet}) and (max-width: #{$small-desktop}) {
+				@content;
+			}
+		} @else if ($name == 'mobile') {
+			@media (max-width: #{$tablet}) {
+				@content;
+			}
 		}
 	}
 }
