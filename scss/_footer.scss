@@ -1,7 +1,67 @@
 @use 'variables';
 
 .footer {
+	position: relative;
+	bottom: 0;
 	background-color: #000;
-	height: 500px;
+	height: auto;
 	margin-top: 150px;
+	z-index: -1;
+
+	.top-section {
+		margin: variables.$margin-main;
+		padding-top: 50px;
+
+		@include variables.breakpoint('mobile') {
+			margin: variables.$margin-mobile;
+		}
+	}
+	.bottom-section {
+		margin: variables.$margin-main;
+		padding-bottom: 30px;
+
+		@include variables.breakpoint('mobile') {
+			margin: variables.$margin-mobile;
+		}
+	}
+	.background-image-container {
+		float: right;
+
+		@include variables.breakpoint('mobile','tablet') {
+			display: none;
+		}
+		img {
+			position: relative;
+			right: -12px;
+		}
+	}
+
+	.info-columns {
+		color: #ffffff;
+		font-size: 14px;
+		margin-top: 50px;
+		.addresses {
+			padding-right: 50px;
+			margin-bottom: 30px;
+		}
+
+		.link-container {
+			padding: 0 40px 40px 0;
+			font-weight: 600;
+			a:link {
+				text-decoration: none;
+				color: #ffffff;
+			}
+			a {
+				width: 100%;
+				display: block;
+			}
+		}
+	}
+	.bottom-text {
+		color: #999999;
+		font-size: 14px;
+		margin-bottom: 0;
+		margin-top: 20px;
+	}
 }

@@ -1,8 +1,8 @@
 function addMobileNavEventListener() {
+  //Add event listener for mobile nav button
   const navbarMobile = document.querySelector('.navbar-mobile');
   const navbarContainer = document.querySelector('.navbar-container');
   navbarMobile.addEventListener('click', function () {
-    console.log('event fired');
     if(navbarMobile.classList.contains('open')) {
       navbarMobile.classList.remove('open');
       navbarContainer.classList.remove('nav-open');
@@ -16,9 +16,8 @@ function addMobileNavEventListener() {
 }
 
 function addRailEventListeners() {
+  //for each package detail container, add event listener for dropdown rail
   document.querySelectorAll('.package-details-summary-container').forEach(item => {
-    console.log(item)
-    console.log('#' + item.id + ' + .package-details-dropdown-rail')
     document.querySelector('#'+item.id + ' + .package-details-dropdown-rail').addEventListener('click', event => {
       if(!item.classList.contains('summary-open')) {
         item.classList.remove('summary-close');
@@ -37,6 +36,7 @@ function addRailEventListeners() {
 function addJSBreakpoints() {
   const windowWidth = window.innerWidth;
 
+  //for tablet, stack info section
   let infoSection = document.querySelector('.info-section');
   if(windowWidth <= 1200) {
     infoSection.classList.remove('d-flex');
@@ -46,6 +46,7 @@ function addJSBreakpoints() {
     }
   }
 
+  //for mobile, hide nav and show open nav button
   let navbar = document.querySelector('.navbar-container');
   if(windowWidth <= 800) {
     if(!navbar.classList.contains('nav-open')) {
@@ -58,23 +59,10 @@ function addJSBreakpoints() {
       navbar.classList.remove('nav-close');
     }
   }
-
-  /*
-  if(windowWidth > 1700) {
-
-  } else if (windowWidth > 1500) {
-      
-  } else if (windowWidth > 1200) {
-
-  } else if (windowWidth > 800) {
-    
-  } else {
-
-  }
-  */
 }
 
 function addResizeEventListeners() {
+  //call breakpoints on window resize for testing purposes
   window.addEventListener('resize', function () {
     addJSBreakpoints();
   })

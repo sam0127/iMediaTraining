@@ -1,5 +1,6 @@
 @use 'variables';
 
+//Animation and movement classes
 .summary-open {
 	@include variables.vendor-prefixes('transition', 'max-height 0.6s ease-in-out');
 	max-height: 4500px !important;
@@ -20,7 +21,7 @@
 	margin-top: 50px;
 
 	@include variables.breakpoint('mobile') {
-		margin: 0 10% 0 10%;
+		margin: variables.$margin-mobile;
 	}
 }
 
@@ -54,11 +55,8 @@
 		}
 	}
 	.left-arrow-icon {
-		//background: url('./assets/left-arrow.png');
 		width: 23px;
 		height: 11px;
-		//color: #000;
-		//display: block;
 	}
 
 	.return-btn-container {
@@ -117,7 +115,7 @@
 .package-details-summary-container {
 	background-color: #fff;
 	max-height: 270px;
-	height: auto; //JS will change this
+	height: auto;
 	padding: 30px 0px 30px 0px;
 	overflow: hidden;
 
@@ -152,7 +150,6 @@
 		
 	}
 	.detail-info {
-		//width: 33%;
 
 		@include variables.breakpoint('small-desktop','tablet','mobile') {
 			width: 100%;
@@ -172,8 +169,6 @@
 	}
 
 	.info-list {
-		//width: 33%;
-		//padding: 15px 15px 0 15px;
 		li {
 			margin-bottom: 2px;
 		}
@@ -246,10 +241,6 @@
 	margin-right: -20px;
 }
 
-.show-card-container {
-	//margin-left: -20px;
-	//margin-right: -20px;
-}
 .show-card {
 	width: 440px;
 	padding: 20px;
@@ -313,11 +304,6 @@
 	width: 100%;
 	padding: 15px 0 15px 40px;
 
-	.rail-text-container {
-		//margin-top: auto;
-		//margin-bottom: auto;
-		//margin-left: 40px;
-	}
 	p {
 		font-size: 18px;
 		font-weight: 600;
