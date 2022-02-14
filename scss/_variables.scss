@@ -1,3 +1,4 @@
+//Variables
 $font-main: Metropolis, Helvetica, sans-serif;
 $margin-main: 0 10% 0 calc(10% + 157px);
 $margin-mobile: 0 10% 0 10%;
@@ -7,6 +8,13 @@ $desktop: 1500px;
 $small-desktop: 1200px;
 $tablet: 800px;
 
+
+//Mixins
+
+//breakpoint mixin
+//@include variables.breakpoint('mobile','tablet',...) {
+//	style: value;
+//}
 @mixin breakpoint($names...) {
 	@each $name in $names {
 		@if ($name == 'large-desktop') {
@@ -50,26 +58,10 @@ $tablet: 800px;
 	width: $width;
 }
 
+//adds each vendor prefix to an attribute
+//@include variables.vendor-prefixes('transform','rotateZ(90deg');
 @mixin vendor-prefixes($name, $value) {
   @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
     #{$vendor}#{$name}: #{$value};
   }
-}
-
-@mixin prefixed-keyframes($name) {
-	@keyframes #{$name} {
-		@content;
-	}
-	@-webkit-keyframes #{$name} {
-		@content;
-	}
-	@-moz-keyframes #{$name} {
-		@content;
-	}
-	@-o-keyframes #{$name} {
-		@content;
-	}
-	@-ms-keyframes #{$name} {
-		@content;
-	}
 }
