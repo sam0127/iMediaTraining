@@ -148,13 +148,14 @@
 		padding: 30px;
 
 		@include variables.breakpoint('mobile') {
-			position: absolute;
-			left: -10px;
 			padding: 10px;
 		}
 	}
 
 	hr {
 		@include variables.horizontal-line(#c1c1c1, 1px, 120px);
+		@include variables.breakpoint('mobile') {
+			@include variables.horizontal-line(#c1c1c1, 1px, 80px);
+		}
 	}
 }

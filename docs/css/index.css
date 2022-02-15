@@ -169,8 +169,6 @@
 }
 @media (max-width: 800px) {
   .navbar .nav-item {
-    position: absolute;
-    left: -10px;
     padding: 10px;
   }
 }
@@ -178,6 +176,13 @@
   height: 1px;
   color: #c1c1c1;
   width: 120px;
+}
+@media (max-width: 800px) {
+  .navbar hr {
+    height: 1px;
+    color: #c1c1c1;
+    width: 80px;
+  }
 }
 
 .summary-open {
