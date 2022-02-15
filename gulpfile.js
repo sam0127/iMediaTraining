@@ -3,12 +3,12 @@ const sass = require('gulp-sass')(require('sass'));
 const { src, dest } = require('gulp');
 
 function defaultTask() {
-	return src('./src/scss/*.scss')
+	return src('./docs/scss/*.scss')
     .pipe(sass.sync().on('error', sass.logError))
-    .pipe(dest('./src/css'))
+    .pipe(dest('./docs/css'))
 }
 
 exports.default = defaultTask
 exports.watch = function () {
-  gulp.watch('./src/scss/*.scss', gulp.series('default'));
+  gulp.watch('./docs/scss/*.scss', gulp.series('default'));
 };
