@@ -71,6 +71,6 @@ function addResizeEventListeners() {
 window.addEventListener('DOMContentLoaded', (event) => {
     addRailEventListeners();
     addMobileNavEventListener();
-    addJSBreakpoints();
-    addResizeEventListeners();
+    //addJSBreakpoints();
+    //addResizeEventListeners();
 });

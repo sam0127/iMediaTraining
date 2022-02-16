@@ -9,6 +9,11 @@ body {
 .main-body {
 	@include variables.font();
 	padding: 0;
+	margin-left: 157px;
+
+	@include variables.breakpoint('mobile') {
+		margin-left: 0;
+	}
 }
 
 hr {

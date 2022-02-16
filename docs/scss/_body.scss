@@ -15,7 +15,7 @@
 }
 
 
-
+/*
 .body-container {
 	margin: variables.$margin-main;
 	margin-top: 50px;
@@ -24,14 +24,17 @@
 		margin: variables.$margin-mobile;
 	}
 }
+*/
 
 .info-section {
 	height: auto;
+	margin: variables.$margin-main;
 	margin-bottom: 40px;
 }
 
 .package-details {
 	padding: 0;
+	margin: variables.$margin-main;
 	margin-bottom: 50px;
 }
 .rounded-purple-btn {
@@ -94,8 +97,8 @@
 .renew-subscription-container {
 
 	background-color: #fff;
-	width: 370px;
-	min-width: 370px;
+	//width: 370px;
+	//min-width: 370px;
 	padding: 30px;
 	padding-left: 40px;
 	height: 200px;
