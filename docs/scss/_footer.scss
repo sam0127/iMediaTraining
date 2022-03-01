@@ -8,31 +8,20 @@
 	margin-top: 150px;
 	z-index: -1;
 
+	hr {
+		width: 100%;
+	}
 	.top-section {
-		margin: variables.$margin-main;
 		padding-top: 50px;
-
-		@include variables.breakpoint('mobile') {
-			margin: variables.$margin-mobile;
-		}
 	}
 	.bottom-section {
-		margin: variables.$margin-main;
 		padding-bottom: 30px;
-
-		@include variables.breakpoint('mobile') {
-			margin: variables.$margin-mobile;
-		}
 	}
 	.background-image-container {
 		float: right;
 
-		@include variables.breakpoint('mobile','tablet') {
+		@include variables.breakpoint('mobile','md','lg') {
 			display: none;
-		}
-		img {
-			position: relative;
-			right: -12px;
 		}
 	}
 

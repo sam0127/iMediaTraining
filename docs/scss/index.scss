@@ -19,3 +19,21 @@ body {
 hr {
 	@include variables.horizontal-line();
 }
+
+.container {
+	@include variables.breakpoint('xxxl') {
+		max-width: 1380px;
+	}
+	@include variables.breakpoint('xxl') {
+		max-width: 1163px
+	}
+	@include variables.breakpoint('xl') {
+		max-width: 983px
+	}
+	@include variables.breakpoint('lg') {
+		max-width: 803px
+	}
+	@include variables.breakpoint('md') {
+		max-width: 563px
+	}
+}

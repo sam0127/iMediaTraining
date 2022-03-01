@@ -36,19 +36,9 @@ function addRailEventListeners() {
 function addJSBreakpoints() {
   const windowWidth = window.innerWidth;
 
-  //for tablet, stack info section
-  let infoSection = document.querySelector('.info-section');
-  if(windowWidth <= 1200) {
-    infoSection.classList.remove('d-flex');
-  } else {
-    if(!infoSection.classList.contains('d-flex')) {
-      infoSection.classList.add('d-flex');
-    }
-  }
-
   //for mobile, hide nav and show open nav button
   let navbar = document.querySelector('.navbar-container');
-  if(windowWidth <= 800) {
+  if(windowWidth <= 768) {
     if(!navbar.classList.contains('nav-open')) {
       navbar.classList.add('nav-close');
     }
@@ -72,5 +62,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
     addRailEventListeners();
     addMobileNavEventListener();
     //addJSBreakpoints();
-    //addResizeEventListeners();
+    addResizeEventListeners();
 });
