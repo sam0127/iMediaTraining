@@ -11,80 +11,88 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
-	<div class="container-fluid main-body">
-		<!-- HEADER SECTION -->
-		<div class="container-fluid header">
-			<h1 class="header-text">Season Packages</h1>
+
+	<!-- NAVBAR -->
+	<div class="navbar-container">
+		<div class="navbar-mobile">
+			<span></span>
 		</div>
-		<div class="container-fluid breadcrumb">
-			<div class="breadcrumb-text"> 
-				<p class="breadcrumb-item">Home</p>
-				<span>/</span>
-				<p class="breadcrumb-item">Shows & Events</p>
-				<span>/</span>
-				<p class="breadcrumb-item">Season Tickets Packages</p>
-				<span>/</span>
-				<p class="breadcrumb-item final">Cabaret</p>
+		<div class="d-flex flex-column navbar">
+			<div class="nav-item logo">
+				<a href="">
+					<img src="assets/SCFTA_Logo.png">
+				</a>
+			</div>
+			<div class="nav-item hamburger-btn">
+				<a href="">
+					<img src="assets/hamburger-btn.png">
+				</a>
+			</div>
+			<div class="nav-item tickets-btn">
+				<a href="">
+					<img src="assets/tickets-btn.png">
+				</a>
+			</div>
+			<div class="nav-item donate-btn">
+				<a href="">
+					<img src="assets/donate-btn.png">
+				</a>
+			</div>
+			<div class="nav-item search-btn">
+				<a href="">
+					<img src="assets/search-btn.png">
+				</a>
+			</div>
+			<hr>
+			<div class="nav-item signin-btn">
+				<a href="">
+					<img src="assets/signin-btn.png">
+				</a>
+			</div>
+			<div class="nav-item cart-btn">
+				<a href="">
+					<img src="assets/cart-btn.png">
+				</a>
+			</div>
+			<div class="nav-item calendar-btn">
+				<a href="">
+					<img src="assets/calendar-btn.png">
+				</a>
 			</div>
 		</div>
-		<div class="container-fluid alert">
-			<p class="alert-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+	</div>
+	<div class="main-body">
+
+		<!-- HEADER SECTION -->
+		<div class="header">
+			<div class="alert">
+				<p class="alert-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+			</div>
+			<div class="container px-0">
+				<h1 class="header-text">Season Packages</h1>
+			</div>
+		</div>
+		<div class="breadcrumb">
+			<div class="container px-0">
+				<div class="breadcrumb-text"> 
+					<p class="breadcrumb-item">Home</p>
+					<span>/</span>
+					<p class="breadcrumb-item">Shows & Events</p>
+					<span>/</span>
+					<p class="breadcrumb-item">Season Tickets Packages</p>
+					<span>/</span>
+					<p class="breadcrumb-item final">Cabaret</p>
+				</div>
+			</div>
 		</div>
 		
-		<div class="navbar-container">
-			<div class="navbar-mobile">
-				<span></span>
-			</div>
-			<div class="d-flex flex-column navbar">
-				<div class="nav-item logo">
-					<a href="">
-						<img src="assets/SCFTA_Logo.png">
-					</a>
-				</div>
-				<div class="nav-item hamburger-btn">
-					<a href="">
-						<img src="assets/hamburger-btn.png">
-					</a>
-				</div>
-				<div class="nav-item tickets-btn">
-					<a href="">
-						<img src="assets/tickets-btn.png">
-					</a>
-				</div>
-				<div class="nav-item donate-btn">
-					<a href="">
-						<img src="assets/donate-btn.png">
-					</a>
-				</div>
-				<div class="nav-item search-btn">
-					<a href="">
-						<img src="assets/search-btn.png">
-					</a>
-				</div>
-				<hr>
-				<div class="nav-item signin-btn">
-					<a href="">
-						<img src="assets/signin-btn.png">
-					</a>
-				</div>
-				<div class="nav-item cart-btn">
-					<a href="">
-						<img src="assets/cart-btn.png">
-					</a>
-				</div>
-				<div class="nav-item calendar-btn">
-					<a href="">
-						<img src="assets/calendar-btn.png">
-					</a>
-				</div>
-			</div>
-		</div>
 
 		<!-- BODY SECTION -->
-		<div class="body-container">
-			<!-- Package Info -->
-			<div class="d-flex info-section">
-				<div class="flex-grow-1 package-info-container">
+
+		<!-- Package Info -->		
+		<div class="container px-0 info-section">
+			<div class="row px-2 mx-0">
+				<div class="col-lg-8 pe-3 gx-0 package-info-container">
 					<div class="package-info-wrapper">
 						<div class="return-btn-container">
 							<p><img class="left-arrow-icon" src="assets/left-arrow.png"></img>BACK TO SEASON PACKAGES</p>
@@ -97,7 +105,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="renew-subscription-container">
+				<div class="col-lg-4 xp-0 renew-subscription-container">
 					<div class="renew-subscription-wrapper">
 						<h3>Renewing Susbcribers</h3>
 						<p>Renew your season package online (including changes.)</p>
@@ -105,521 +113,530 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- Package Details -->
-			<div class="container-fluid package-details">
-				<div class="package-details-summary-container" id="summary-container-1">
-					<div class="d-flex flex-wrap summary-wrapper">
-						<div class="flex-fill detail-info">
-							<div class="info-container">
-								<h2>Cabaret Series 1</h2>
-								<p>Thursday Evenings</p>
-								<p class="price-text">$110.00 - $607.00</p>
-								<button class="rounded-purple-btn">SELECT THIS PACKAGE</button>
-							</div>
-						</div>
-						
-						<div class="flex-fill info-list">
-							<div class="vertical-line-container">
-								<hr class="vertical-line">
-							</div>
-							<div class="list-container">
-								<ul>
-									<li>6 shows included</li>
-									<li>Subscription package for Thursday evenings during first week of most performances.</li>
-									<li>Great availability.</li>
-								</ul>
-							</div>
-						</div>
-						
-						<div class="flex-fill info-list">
-							<div class="vertical-line-container">
-								<hr class="vertical-line">
-							</div>
-							<div class="list-container">
-								<ul>
-									<li>Laura Benanti</li>
-									<li>Megan Hilty</li>
-									<li>John Lloyd Young</li>
-									<li>Jane Lynch & Kate Flannery</li>
-									<li>Tony Yazbek</li>
-									<li>Caissie Levy</li>
-								</ul>
-							</div>
-						</div>
+			<!--div class="flex-grow-1 package-info-container">
+				<div class="package-info-wrapper">
+					<div class="return-btn-container">
+						<p><img class="left-arrow-icon" src="assets/left-arrow.png"></img>BACK TO SEASON PACKAGES</p>
 					</div>
-					<div class="package-details-dropdown-container">
-						<div class="d-flex dropdown-topline">
-							<hr class="flex-fill topline">
-							<h3 class="flex-fill topline-text">Shows Included in This Package</h3>
-							<hr class="flex-fill topline">
-						</div>
-						<div class="show-gallery-container">
-							<div class="d-flex flex-wrap show-gallery">
-								<!-- SHOW CARDS -->
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/laura-benanti-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Laura Benanti</h4>
-										<p>September 23, 2021 at 7:30 PM</p>
-										<p>
-											Center Audiences are in for a rare treat as one of today’s most celebrated singing actresses, Tony Award winner Laura Benanti, makes her debut in the Cabaret Series.
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<img src="assets/hands-icon.png"><hr><img src="assets/ad-icon.png"><hr><p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/megan-hilty-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Megan Hilty</h4>
-										<p>October 21, 2021 at 7:30 PM</p>
-										<p>
-											The Tony Award®- nominated star of stage and screen returns for Cabaret concerts filled with her signature sweetness, humor and magnificent singing.
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/john-lloyd-young-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>John Lloyd Young's Broadway</h4>
-										<p>December 16, 2021 at 7:30 PM</p>
-										<p>
-											The Tony® and Grammy Award®-winning star of Broadway’s Jersey Boys returns to the Cabaret with a concert filled with favorite songs from Jersey Boys, The Wiz, Chicago, Hair, and more!
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/lynch-and-flannery-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Lynch and Flannery</h4>
-										<p>January 27, 2021 at 7:30 PM</p>
-										<p>
-											Center Audiences are in for a rare treat as one of today’s most celebrated singing actresses, Tony Award winner Laura Benanti, makes her debut in the Cabaret Series.
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<img src="assets/hands-icon.png"><hr><img src="assets/ad-icon.png"><hr><p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/tony-yazbek-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Tony Yazbek</h4>
-										<p>March 24, 2021 at 7:30 PM</p>
-										<p>
-											The Tony®-nominated leading man brings classic show tunes, new standards and dazzling tap dancing to his Cabaret Series debut.
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/caissie-levy-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Caissie Levy</h4>
-										<p>May 19, 2021 at 7:30 PM</p>
-										<p>
-											One of Broadway’s most sought-after stars, Caissie Levy originated the role of Elsa in Disney’s production of Frozen. Now she comes to the Center for her Cabaret Series debut!
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
+					<div class="subscription-title-container">
+						<h1>Subscription Package: <strong>Cabaret</strong></h1>
 					</div>
-				</div>
-				<div class="package-details-dropdown-rail" id="dropdown-rail-1">
-						<div class="rail-text-container">
-							<p>+ SEE PACKAGE CONTENTS</p>
-						</div>
+					<div class="subscription-description-container">
+						<p>Select ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididont ut labore.</p>
+					</div>
 				</div>
 			</div>
+			<div class="renew-subscription-container">
+				<div class="renew-subscription-wrapper">
+					<h3>Renewing Susbcribers</h3>
+					<p>Renew your season package online (including changes.)</p>
+					<button class="rounded-purple-btn">RENEW SUBSCRIPTION</button>
+				</div>
+			</div-->
+		</div>
 
-			<div class="container-fluid package-details">
-				<div class="package-details-summary-container" id="summary-container-2">
-					<div class="d-flex flex-wrap summary-wrapper">
-						<div class="flex-fill detail-info">
-							<div class="info-container">
-								<h2>Cabaret Series 2</h2>
-								<p>Friday Evenings</p>
-								<p class="price-text">$110.00 - $607.00</p>
-								<button class="rounded-purple-btn">SELECT THIS PACKAGE</button>
-							</div>
+		<!-- Package Details -->
+		<div class="container px-2 package-details">
+			<div class="package-details-summary-container" id="summary-container-1">
+				<div class="row justify-content-center p-3 mx-0 my-3">
+					<div class="col-lg-4 detail-info">
+						<div class="info-container">
+							<h2>Cabaret Series 1</h2>
+							<p>Thursday Evenings</p>
+							<p class="price-text">$110.00 - $607.00</p>
+							<button class="rounded-purple-btn">SELECT THIS PACKAGE</button>
 						</div>
-						
-						<div class="flex-fill info-list">
-							<div class="vertical-line-container">
-								<hr class="vertical-line">
-							</div>
-							<div class="list-container">
-								<ul>
-									<li>6 shows included</li>
-									<li>Subscription package for Thursday evenings during first week of most performances.</li>
-									<li>Great availability.</li>
-								</ul>
-							</div>
+					</div>
+					<div class="col-lg-4 info-list">
+						<div class="vertical-line-container">
+							<hr class="vertical-line">
 						</div>
-						
-						<div class="flex-fill info-list">
-							<div class="vertical-line-container">
-								<hr class="vertical-line">
-							</div>
-							<div class="list-container">
-								<ul>
-									<li>Laura Benanti</li>
-									<li>Megan Hilty</li>
-									<li>John Lloyd Young</li>
-									<li>Jane Lynch & Kate Flannery</li>
-									<li>Tony Yazbek</li>
-									<li>Caissie Levy</li>
-								</ul>
+						<div class="list-container">
+							<ul>
+								<li>6 shows included</li>
+								<li>Subscription package for Thursday evenings during first week of most performances.</li>
+								<li>Great availability.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 info-list">
+						<div class="vertical-line-container">
+							<hr class="vertical-line">
+						</div>
+						<div class="list-container">
+							<ul>
+								<li>Laura Benanti</li>
+								<li>Megan Hilty</li>
+								<li>John Lloyd Young</li>
+								<li>Jane Lynch & Kate Flannery</li>
+								<li>Tony Yazbek</li>
+								<li>Caissie Levy</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row p-3 mx-0 my-3 dropdown-topline">
+					<div class="col-4 ps-0 pe-1">
+						<hr class="topline">
+					</div>
+					<div class="col-4 p-0">
+						<h3 class="topline-text">Shows Included in This Package</h3>
+					</div>
+					<div class="col-4 ps-1 pe-0">
+						<hr class="topline">
+					</div>
+				</div>
+				<div class="row p-3 mx-0 my-3">
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/laura-benanti-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Laura Benanti</h4>
+							<p>September 23, 2021 at 7:30 PM</p>
+							<p>
+								Center Audiences are in for a rare treat as one of today’s most celebrated singing actresses, Tony Award winner Laura Benanti, makes her debut in the Cabaret Series.
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<img src="assets/hands-icon.png"><hr><img src="assets/ad-icon.png"><hr><p>Audience Advisory</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="package-details-dropdown-container">
-						<div class="d-flex dropdown-topline">
-							<hr class="flex-fill topline">
-							<h3 class="flex-fill topline-text">Shows Included in This Package</h3>
-							<hr class="flex-fill topline">
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/megan-hilty-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Megan Hilty</h4>
+							<p>October 21, 2021 at 7:30 PM</p>
+							<p>
+								The Tony Award®- nominated star of stage and screen returns for Cabaret concerts filled with her signature sweetness, humor and magnificent singing.
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<p>Audience Advisory</p>
+								</div>
+							</div>
 						</div>
-						<div class="show-gallery-container">
-							<div class="d-flex flex-wrap show-gallery">
-								<!-- SHOW CARDS -->
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/laura-benanti-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Laura Benanti</h4>
-										<p>September 23, 2021 at 7:30 PM</p>
-										<p>
-											Center Audiences are in for a rare treat as one of today’s most celebrated singing actresses, Tony Award winner Laura Benanti, makes her debut in the Cabaret Series.
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<img src="assets/hands-icon.png"><hr><img src="assets/ad-icon.png"><hr><p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/john-lloyd-young-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>John Lloyd Young's Broadway</h4>
+							<p>December 16, 2021 at 7:30 PM</p>
+							<p>
+								The Tony® and Grammy Award®-winning star of Broadway’s Jersey Boys returns to the Cabaret with a concert filled with favorite songs from Jersey Boys, The Wiz, Chicago, Hair, and more!
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<p>Audience Advisory</p>
 								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/megan-hilty-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Megan Hilty</h4>
-										<p>October 21, 2021 at 7:30 PM</p>
-										<p>
-											The Tony Award®- nominated star of stage and screen returns for Cabaret concerts filled with her signature sweetness, humor and magnificent singing.
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/john-lloyd-young-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>John Lloyd Young's Broadway</h4>
-										<p>December 16, 2021 at 7:30 PM</p>
-										<p>
-											The Tony® and Grammy Award®-winning star of Broadway’s Jersey Boys returns to the Cabaret with a concert filled with favorite songs from Jersey Boys, The Wiz, Chicago, Hair, and more!
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/lynch-and-flannery-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Lynch and Flannery</h4>
-										<p>January 27, 2021 at 7:30 PM</p>
-										<p>
-											Center Audiences are in for a rare treat as one of today’s most celebrated singing actresses, Tony Award winner Laura Benanti, makes her debut in the Cabaret Series.
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<img src="assets/hands-icon.png"><hr><img src="assets/ad-icon.png"><hr><p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/tony-yazbek-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Tony Yazbek</h4>
-										<p>March 24, 2021 at 7:30 PM</p>
-										<p>
-											The Tony®-nominated leading man brings classic show tunes, new standards and dazzling tap dancing to his Cabaret Series debut.
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/caissie-levy-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Caissie Levy</h4>
-										<p>May 19, 2021 at 7:30 PM</p>
-										<p>
-											One of Broadway’s most sought-after stars, Caissie Levy originated the role of Elsa in Disney’s production of Frozen. Now she comes to the Center for her Cabaret Series debut!
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="package-details-dropdown-rail" id="dropdown-rail-2">
-						<div class="rail-text-container">
-							<p>+ SEE PACKAGE CONTENTS</p>
-						</div>
-				</div>
-			</div>
-
-			<div class="container-fluid package-details">
-				<div class="package-details-summary-container" id="summary-container-3">
-					<div class="d-flex flex-wrap summary-wrapper">
-						<div class="flex-fill detail-info">
-							<div class="info-container">
-								<h2>Cabaret Series 3</h2>
-								<p>Thursday Evenings</p>
-								<p class="price-text">$110.00 - $607.00</p>
-								<button class="rounded-purple-btn">SELECT THIS PACKAGE</button>
-							</div>
-						</div>
-						
-						<div class="flex-fill info-list">
-							<div class="vertical-line-container">
-								<hr class="vertical-line">
-							</div>
-							<div class="list-container">
-								<ul>
-									<li>6 shows included</li>
-									<li>Subscription package for Thursday evenings during first week of most performances.</li>
-									<li>Great availability.</li>
-								</ul>
-							</div>
-						</div>
-						
-						<div class="flex-fill info-list">
-							<div class="vertical-line-container">
-								<hr class="vertical-line">
-							</div>
-							<div class="list-container">
-								<ul>
-									<li>Laura Benanti</li>
-									<li>Megan Hilty</li>
-									<li>John Lloyd Young</li>
-									<li>Jane Lynch & Kate Flannery</li>
-									<li>Tony Yazbek</li>
-									<li>Caissie Levy</li>
-								</ul>
+				<div class="row p-3 mx-0 my-3">
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/lynch-and-flannery-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Lynch and Flannery</h4>
+							<p>January 27, 2021 at 7:30 PM</p>
+							<p>
+								Center Audiences are in for a rare treat as one of today’s most celebrated singing actresses, Tony Award winner Laura Benanti, makes her debut in the Cabaret Series.
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<img src="assets/hands-icon.png"><hr><img src="assets/ad-icon.png"><hr><p>Audience Advisory</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="package-details-dropdown-container">
-						<div class="d-flex dropdown-topline">
-							<hr class="flex-fill topline">
-							<h3 class="flex-fill topline-text">Shows Included in This Package</h3>
-							<hr class="flex-fill topline">
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/tony-yazbek-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Tony Yazbek</h4>
+							<p>March 24, 2021 at 7:30 PM</p>
+							<p>
+								The Tony®-nominated leading man brings classic show tunes, new standards and dazzling tap dancing to his Cabaret Series debut.
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<p>Audience Advisory</p>
+								</div>
+							</div>
 						</div>
-						<div class="show-gallery-container">
-							<div class="d-flex flex-wrap show-gallery">
-								<!-- SHOW CARDS -->
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/laura-benanti-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Laura Benanti</h4>
-										<p>September 23, 2021 at 7:30 PM</p>
-										<p>
-											Center Audiences are in for a rare treat as one of today’s most celebrated singing actresses, Tony Award winner Laura Benanti, makes her debut in the Cabaret Series.
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<img src="assets/hands-icon.png"><hr><img src="assets/ad-icon.png"><hr><p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/caissie-levy-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Caissie Levy</h4>
+							<p>May 19, 2021 at 7:30 PM</p>
+							<p>
+								One of Broadway’s most sought-after stars, Caissie Levy originated the role of Elsa in Disney’s production of Frozen. Now she comes to the Center for her Cabaret Series debut!
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<p>Audience Advisory</p>
 								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/megan-hilty-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Megan Hilty</h4>
-										<p>October 21, 2021 at 7:30 PM</p>
-										<p>
-											The Tony Award®- nominated star of stage and screen returns for Cabaret concerts filled with her signature sweetness, humor and magnificent singing.
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/john-lloyd-young-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>John Lloyd Young's Broadway</h4>
-										<p>December 16, 2021 at 7:30 PM</p>
-										<p>
-											The Tony® and Grammy Award®-winning star of Broadway’s Jersey Boys returns to the Cabaret with a concert filled with favorite songs from Jersey Boys, The Wiz, Chicago, Hair, and more!
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/lynch-and-flannery-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Lynch and Flannery</h4>
-										<p>January 27, 2021 at 7:30 PM</p>
-										<p>
-											Center Audiences are in for a rare treat as one of today’s most celebrated singing actresses, Tony Award winner Laura Benanti, makes her debut in the Cabaret Series.
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<img src="assets/hands-icon.png"><hr><img src="assets/ad-icon.png"><hr><p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/tony-yazbek-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Tony Yazbek</h4>
-										<p>March 24, 2021 at 7:30 PM</p>
-										<p>
-											The Tony®-nominated leading man brings classic show tunes, new standards and dazzling tap dancing to his Cabaret Series debut.
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-fill show-card-container">
-									<div class="show-card">
-										<img class="show-card-image" src="assets/caissie-levy-thumbnail.jpg">
-										<p>Samueli Theater</p>
-										<h4>Caissie Levy</h4>
-										<p>May 19, 2021 at 7:30 PM</p>
-										<p>
-											One of Broadway’s most sought-after stars, Caissie Levy originated the role of Elsa in Disney’s production of Frozen. Now she comes to the Center for her Cabaret Series debut!
-										</p>
-										<div class="card-links">
-											<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
-											<div class="bottom-links">
-												<p>Audience Advisory</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="package-details-dropdown-rail" id="dropdown-rail-3">
-						<div class="rail-text-container">
-							<p>+ SEE PACKAGE CONTENTS</p>
-						</div>
+			</div>
+			<div class="package-details-dropdown-rail" id="dropdown-rail-1">
+				<div class="rail-text-container">
+					<p>+ SEE PACKAGE CONTENTS</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="container-fluid footer">
+
+		<div class="container px-2 package-details">
+			<div class="package-details-summary-container" id="summary-container-2">
+				<div class="row justify-content-center p-3 mx-0 my-3">
+					<div class="col-lg-4 detail-info">
+						<div class="info-container">
+							<h2>Cabaret Series 2</h2>
+							<p>Friday Evenings</p>
+							<p class="price-text">$110.00 - $607.00</p>
+							<button class="rounded-purple-btn">SELECT THIS PACKAGE</button>
+						</div>
+					</div>
+					<div class="col-lg-4 info-list">
+						<div class="vertical-line-container">
+							<hr class="vertical-line">
+						</div>
+						<div class="list-container">
+							<ul>
+								<li>6 shows included</li>
+								<li>Subscription package for Thursday evenings during first week of most performances.</li>
+								<li>Great availability.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 info-list">
+						<div class="vertical-line-container">
+							<hr class="vertical-line">
+						</div>
+						<div class="list-container">
+							<ul>
+								<li>Laura Benanti</li>
+								<li>Megan Hilty</li>
+								<li>John Lloyd Young</li>
+								<li>Jane Lynch & Kate Flannery</li>
+								<li>Tony Yazbek</li>
+								<li>Caissie Levy</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row p-3 mx-0 my-3 dropdown-topline">
+					<div class="col-4 ps-0 pe-1">
+						<hr class="topline">
+					</div>
+					<div class="col-4 p-0">
+						<h3 class="topline-text">Shows Included in This Package</h3>
+					</div>
+					<div class="col-4 ps-1 pe-0">
+						<hr class="topline">
+					</div>
+				</div>
+				<div class="row p-3 mx-0 my-3">
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/laura-benanti-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Laura Benanti</h4>
+							<p>September 23, 2021 at 7:30 PM</p>
+							<p>
+								Center Audiences are in for a rare treat as one of today’s most celebrated singing actresses, Tony Award winner Laura Benanti, makes her debut in the Cabaret Series.
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<img src="assets/hands-icon.png"><hr><img src="assets/ad-icon.png"><hr><p>Audience Advisory</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/megan-hilty-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Megan Hilty</h4>
+							<p>October 21, 2021 at 7:30 PM</p>
+							<p>
+								The Tony Award®- nominated star of stage and screen returns for Cabaret concerts filled with her signature sweetness, humor and magnificent singing.
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<p>Audience Advisory</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/john-lloyd-young-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>John Lloyd Young's Broadway</h4>
+							<p>December 16, 2021 at 7:30 PM</p>
+							<p>
+								The Tony® and Grammy Award®-winning star of Broadway’s Jersey Boys returns to the Cabaret with a concert filled with favorite songs from Jersey Boys, The Wiz, Chicago, Hair, and more!
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<p>Audience Advisory</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row p-3 mx-0 my-3">
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/lynch-and-flannery-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Lynch and Flannery</h4>
+							<p>January 27, 2021 at 7:30 PM</p>
+							<p>
+								Center Audiences are in for a rare treat as one of today’s most celebrated singing actresses, Tony Award winner Laura Benanti, makes her debut in the Cabaret Series.
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<img src="assets/hands-icon.png"><hr><img src="assets/ad-icon.png"><hr><p>Audience Advisory</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/tony-yazbek-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Tony Yazbek</h4>
+							<p>March 24, 2021 at 7:30 PM</p>
+							<p>
+								The Tony®-nominated leading man brings classic show tunes, new standards and dazzling tap dancing to his Cabaret Series debut.
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<p>Audience Advisory</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/caissie-levy-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Caissie Levy</h4>
+							<p>May 19, 2021 at 7:30 PM</p>
+							<p>
+								One of Broadway’s most sought-after stars, Caissie Levy originated the role of Elsa in Disney’s production of Frozen. Now she comes to the Center for her Cabaret Series debut!
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<p>Audience Advisory</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="package-details-dropdown-rail" id="dropdown-rail-2">
+				<div class="rail-text-container">
+					<p>+ SEE PACKAGE CONTENTS</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container px-2 package-details">
+			<div class="package-details-summary-container" id="summary-container-3">
+				<div class="row justify-content-center p-3 mx-0 my-3">
+					<div class="col-lg-4 detail-info">
+						<div class="info-container">
+							<h2>Cabaret Series 3</h2>
+							<p>Thursday Evenings</p>
+							<p class="price-text">$110.00 - $607.00</p>
+							<button class="rounded-purple-btn">SELECT THIS PACKAGE</button>
+						</div>
+					</div>
+					<div class="col-lg-4 info-list">
+						<div class="vertical-line-container">
+							<hr class="vertical-line">
+						</div>
+						<div class="list-container">
+							<ul>
+								<li>6 shows included</li>
+								<li>Subscription package for Thursday evenings during first week of most performances.</li>
+								<li>Great availability.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 info-list">
+						<div class="vertical-line-container">
+							<hr class="vertical-line">
+						</div>
+						<div class="list-container">
+							<ul>
+								<li>Laura Benanti</li>
+								<li>Megan Hilty</li>
+								<li>John Lloyd Young</li>
+								<li>Jane Lynch & Kate Flannery</li>
+								<li>Tony Yazbek</li>
+								<li>Caissie Levy</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row p-3 mx-0 my-3 dropdown-topline">
+					<div class="col-4 ps-0 pe-1">
+						<hr class="topline">
+					</div>
+					<div class="col-4 p-0">
+						<h3 class="topline-text">Shows Included in This Package</h3>
+					</div>
+					<div class="col-4 ps-1 pe-0">
+						<hr class="topline">
+					</div>
+				</div>
+				<div class="row p-3 mx-0 my-3">
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/laura-benanti-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Laura Benanti</h4>
+							<p>September 23, 2021 at 7:30 PM</p>
+							<p>
+								Center Audiences are in for a rare treat as one of today’s most celebrated singing actresses, Tony Award winner Laura Benanti, makes her debut in the Cabaret Series.
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<img src="assets/hands-icon.png"><hr><img src="assets/ad-icon.png"><hr><p>Audience Advisory</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/megan-hilty-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Megan Hilty</h4>
+							<p>October 21, 2021 at 7:30 PM</p>
+							<p>
+								The Tony Award®- nominated star of stage and screen returns for Cabaret concerts filled with her signature sweetness, humor and magnificent singing.
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<p>Audience Advisory</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/john-lloyd-young-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>John Lloyd Young's Broadway</h4>
+							<p>December 16, 2021 at 7:30 PM</p>
+							<p>
+								The Tony® and Grammy Award®-winning star of Broadway’s Jersey Boys returns to the Cabaret with a concert filled with favorite songs from Jersey Boys, The Wiz, Chicago, Hair, and more!
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<p>Audience Advisory</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row p-3 mx-0 my-3">
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/lynch-and-flannery-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Lynch and Flannery</h4>
+							<p>January 27, 2021 at 7:30 PM</p>
+							<p>
+								Center Audiences are in for a rare treat as one of today’s most celebrated singing actresses, Tony Award winner Laura Benanti, makes her debut in the Cabaret Series.
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<img src="assets/hands-icon.png"><hr><img src="assets/ad-icon.png"><hr><p>Audience Advisory</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/tony-yazbek-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Tony Yazbek</h4>
+							<p>March 24, 2021 at 7:30 PM</p>
+							<p>
+								The Tony®-nominated leading man brings classic show tunes, new standards and dazzling tap dancing to his Cabaret Series debut.
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<p>Audience Advisory</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="show-card">
+							<img class="show-card-image" src="assets/caissie-levy-thumbnail.jpg">
+							<p>Samueli Theater</p>
+							<h4>Caissie Levy</h4>
+							<p>May 19, 2021 at 7:30 PM</p>
+							<p>
+								One of Broadway’s most sought-after stars, Caissie Levy originated the role of Elsa in Disney’s production of Frozen. Now she comes to the Center for her Cabaret Series debut!
+							</p>
+							<div class="card-links">
+								<p class="readmore-link"><img class="right-arrow-icon" src="assets/right-arrow.png">READ MORE</a>
+								<div class="bottom-links">
+									<p>Audience Advisory</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="package-details-dropdown-rail" id="dropdown-rail-3">
+				<div class="rail-text-container">
+					<p>+ SEE PACKAGE CONTENTS</p>
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="footer">
 			<div class="background-image-container">
 					<img src="assets/logo-abstract.png">
 			</div>
-			<div class="top-section">
+			
+			<div class="container px-2 top-section">
 				<div class="logo-container">
 					<img src="assets/SCFTA_Logo-text.png">
 				</div>
@@ -651,7 +668,7 @@
 				</div>
 			</div>
 			<hr>
-			<div class="bottom-section">
+			<div class="container px-2 bottom-section">
 				<p class="bottom-text">
 					© 2021 Segerstrom Center for the Arts   |   Privacy   |   Terms
 				</p>

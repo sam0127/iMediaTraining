@@ -15,24 +15,22 @@
 	padding: 0;
 	background-image: linear-gradient(to right, #ef8d1d, #f6de50);
 
-	@include variables.breakpoint('mobile') {
-		height: 190px;
-	}
 	.header-text {
 		@include variables.font(85px,300);
-		margin: variables.$margin-main;
 		color: #fefefe;
 		position: relative;
-		top: 70px;
 
-		@include variables.breakpoint('tablet') {
-			font-size: 56px;
-			top: 80px;
+		@include variables.breakpoint('md') {
+			font-size: 65px;
+			top: 10px;
 		}
-		@include variables.breakpoint('mobile') {
-			font-size: 40px;
-			margin: 0 10% 0 10%;
-			top: 90px;
+		@include variables.breakpoint('sm') {
+			font-size: 55px;
+			top: 15px;
+		}
+		@include variables.breakpoint('xs') {
+			font-size: 36px;
+			top: 15px;
 		}
 	}
 }
@@ -43,10 +41,11 @@
 	
 	.breadcrumb-text {
 		@include variables.font(14px);
-		margin: variables.$margin-main;
 		color: #666666;
 		margin-top: auto;
 		margin-bottom: auto;
+		position: relative;
+		top: 20px;
 
 		.breadcrumb-item {
 			display: inline;
@@ -59,35 +58,24 @@
 		.final {
 			color: #000000;
 		}
-		@include variables.breakpoint('mobile') {
-			margin: 20px 10% 0 10%;
-		}
 	}
 }
 
 .alert {
-	position: absolute;
-	top: 0;
-	height: 50px;
+	height: auto;
 	background-color: #000;
 	border-radius: 0;
 	text-align: center;
-	padding-top: 10px;
-
+	padding: 10px 0 10px 0;
+	width: 100%;
 	
 	.alert-text {
 		color: #f4da4c;
-		margin: variables.$margin-main;
-
-	}
-
-	@include variables.breakpoint('mobile') {
-		font-size: 14px;
-		height: auto;
-	
-		.alert-text {
-			margin: 0 10% 0 10%;
+		margin: 0;
+		@include variables.breakpoint('xs') {
+			font-size: 14px;
 		}
+
 	}
 }
 
@@ -96,6 +84,9 @@
 	position: relative;
 	padding: 20px;
 	background-color: #f8f8f3;
+	border: 1px solid #d0d0d0;
+	border-top: none;
+	border-left: none;
 	border-radius: 0 0 5px 0;
 	top: 0;
 	left: 99px;
@@ -120,6 +111,7 @@
 }
 .navbar-container {
 	position: fixed;
+	z-index: 1;
 	top: 0;
 	width: 157px;
 	height: 100%;
